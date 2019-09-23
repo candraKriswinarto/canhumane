@@ -1,0 +1,42 @@
+@include media-md {
+  .home-boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include media-lg {
+  .home-boxes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  header {
+    .menu-btn {
+      visibility: hidden;
+    }
+
+    nav {
+      position: static;
+      visibility: visible;
+      height: auto;
+      padding: 0;
+      background: none;
+
+      max-width: 1200px;
+      padding: 1rem 3rem;
+      margin: 0 auto;
+
+      ul {
+        display: flex;
+
+        li {
+          margin-bottom: 0;
+          margin-right: 2rem;
+  
+          a {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}

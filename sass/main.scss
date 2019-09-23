@@ -1,0 +1,17 @@
+@import './config';
+@import './menu';
+@import './home';
+@import './responsive';
+
+
+body {
+  background: #f4f4f4;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 1rem 3rem;
+  margin: 0 auto;
+
+}
+

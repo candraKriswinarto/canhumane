@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+$primary-color: #14151D;
+$secondary-color: #181A1B;
+$header-color: #101217;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@mixin transition-ease {
+  transition: all 0.3s ease-in-out;
+}
+
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}
