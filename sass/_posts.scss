@@ -1,0 +1,30 @@
+#posts {
+  margin: 4rem 0;
+
+  .post {
+    margin-top: 2rem;
+    background: #ccc;
+    padding: 1rem;
+
+    &-title {
+      font-size: 17px;
+      margin-bottom: 4px;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+
+    &-btn {
+      text-decoration: none;
+      background: #333;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      @include transition-ease;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}

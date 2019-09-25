@@ -1,0 +1,81 @@
+#about {
+  margin: 5rem 0;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2rem 0;
+  }
+
+  .about-skill {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+
+    &__title h3 {
+      font-size: 1.5rem;
+    }
+
+    &__body {
+      ul li {
+        border-bottom: 1px solid $primary-color;
+        margin-bottom: 1rem;
+        padding-bottom: .5rem;
+      }
+    }
+  }
+
+  .about-projects {
+    &__title h3 {
+      font-size: 1.5rem;
+      margin: 2rem 0;   
+    }
+
+    &__body {
+      display: grid;
+      grid-gap: 15px;
+      grid-template-columns: 1fr;
+
+      .about-project {
+        background: $primary-color;
+        color: #fff;
+        padding: 1rem;
+        position: relative;
+        cursor: pointer;
+        @include transition-ease;
+
+        &__title {
+          padding-right: 1.5rem;
+
+          h4 {
+            font-size: 22px;
+            margin-bottom: 1rem;
+          }
+
+          p {
+            font-size: 18px;
+            opacity: 0.8;
+          }
+        }
+
+        &__icon {
+          position: absolute;
+          bottom: 1rem;
+          right: 1rem;
+          opacity: 0.9;
+          font-size: 1.5rem;
+          transform: rotate(-45deg);
+          @include transition-ease;
+        }
+
+        &:hover {
+          box-shadow: 2px 6px 10px rgba(0,0,0,.9);
+
+          .about-project__icon {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

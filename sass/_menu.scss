@@ -7,6 +7,9 @@ header {
   justify-content: right;
   align-items: center;
   height: 4rem;
+  position: fixed;
+  z-index: 5;
+  opacity: 0.9;
 
   .menu-btn {
     position: absolute;

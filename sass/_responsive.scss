@@ -2,6 +2,14 @@
   .home-boxes {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  #about .about-projects__body {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #about .about-skill {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @include media-lg {
@@ -38,5 +46,9 @@
         }
       }
     }
+  }
+
+  #about .about-projects__body {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

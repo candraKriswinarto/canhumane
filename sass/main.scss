@@ -1,6 +1,10 @@
 @import './config';
 @import './menu';
 @import './home';
+@import './about';
+@import './contact';
+@import './posts';
+@import './footer';
 @import './responsive';
 
 
@@ -12,6 +16,5 @@ body {
   max-width: 1200px;
   padding: 1rem 3rem;
   margin: 0 auto;
-
 }
 
