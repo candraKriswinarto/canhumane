@@ -1,8 +1,13 @@
 #posts {
   margin: 4rem 0;
 
+  #output {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+  }
+
   .post {
-    margin-top: 2rem;
     background: #ccc;
     padding: 1rem;
 

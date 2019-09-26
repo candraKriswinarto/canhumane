@@ -10,6 +10,15 @@
   #about .about-skill {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  #posts #output {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  #contact .contact-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @include media-lg {
@@ -49,6 +58,10 @@
   }
 
   #about .about-projects__body {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #posts #output {
     grid-template-columns: repeat(3, 1fr);
   }
 }

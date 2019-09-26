@@ -1,0 +1,60 @@
+#contact {
+  margin: 5rem 0 4rem 0;
+
+  .contact-container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .contact-form {
+
+      .name-form {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      label {
+        margin: 15px 0 5px 0;
+        display: block;
+        font-weight: bold;
+        color: #333;
+      }
+
+      input[type=text], input[type=email], textarea {
+        width: 100%;
+        border: none;
+        text-indent: 10px;
+        padding: 5px;
+        height: 35px;
+        background: #ccc;
+        color: #222;
+        font-family: sans-serif;
+
+        &::placeholder {
+          font-size: 14px;
+        }
+      }
+
+      textarea {
+        height: 90px;
+      }
+
+      input[type=submit] {
+        width: 100%;
+        margin-top: 1rem;
+        background: $primary-color;
+        color: #fff;
+        border: none;
+        font-weight: bold;
+        height: 40px;
+        cursor: pointer;
+        @include transition-ease;
+
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}
